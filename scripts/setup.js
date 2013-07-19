@@ -132,7 +132,7 @@ function sendMessage() {
     var dataString = $('#cform').serialize();
     $.ajax({
         type: "POST",
-        url: 'contact.php',
+        url: 'post-contact',
         data: dataString,
         dataType: 'json',
         success: function (data) {
@@ -150,8 +150,8 @@ function sendMessage() {
                 $("div#msgs").html('<p class="alert alert-error">Could not complete your request. See the errors below!</p>' + errors);
             }
             else if (data.success == 1) {
-
                 $("div#msgs").html('<p class="alert alert-success">You message has been sent successfully!</p>');
+                $('#cform')[0].reset();
             }
 
         },
