@@ -121,7 +121,6 @@ ul#works_filter li a:link, ul#works_filter li a:visited {
     font-size:12px;
     text-decoration:none;
     display:block;
-    color:#FFF;
     margin-right:1px;
     padding:2px 10px
 }
@@ -261,57 +260,6 @@ div.page img {
     border:1px solid #73aaca;
     max-width:94%
 }
-a#logo:hover, a.facebook:hover, a.twitter:hover, a.linkedin:hover, a.dribbble:hover, div.image_gallery img:hover {
-    opacity:.5
-}
-fieldset#contact_form button, .right {
-    float:right
-}
-div.misc a, a:hover {
-    text-decoration:none
-}
-div.blogpost a.readmore:hover, ul.pagination a:hover, ul.pagination a.active_page {
-    background:url(./images/bg/50.png);
-    color:#FFF
-}
-ol.comments li.comment a.reply:hover, div.tab ul.tab_menu li:hover, div.tab ul.tab_menu li.active {
-    background:#8f8f8f;
-    color:#FFF
-}
-.knob {
-    color: White !important;
-    text-shadow:1px 1px 0px #7D628C;
-    font-size:25px !important;
-}
-.clearfix {
-    float: none;
-    clear: both;
-}
-.prev {
-    position:absolute;
-    margin-left:-5px;
-    margin-top: 20px;
-}
-.next {
-    position:absolute;
-    margin-left: 680px;
-    margin-top: 20px;
-}
-ul.sublist li {
-    width: 140px;
-    float: left;
-}
-ul.sublist li {
-    background: url('../images/ico-arrow.gif') 0px 10px no-repeat;
-    font-size:12px;
-}
-ul.sublist li a {
-    color:#fff;
-    text-decoration:none;
-}
-ul.sublist li a:hover {
-    color:#002b44;
-}
 /* GRID */
 .grid {
     border: 1px solid #4b88ad;
@@ -448,6 +396,10 @@ ul.sublist li a:hover {
 
 #ma_holder {
     padding: 10px;
+}
+#ma_holder h3 {
+    color: #fff;
+    font-size: 30px;
 }
 #ma_contact {
     text-align: center;

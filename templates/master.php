@@ -32,19 +32,19 @@
 
 </head>
 <body>
-<div id="wrap"> 
+<div id="wrap">
   <!-- wrapper -->
-  <div id="sidebar"> 
-    <!-- the  sidebar --> 
+  <div id="sidebar">
+    <!-- the  sidebar -->
     <!-- logo -->
     <div id="ma_holder" class="text-center">
-        <img width="190px" class="img-polaroid" src="./images/123hIDA72hfdkA.jpg" alt="">
+        <img width="200px" class="img-circle" src="./images/123hIDA72hfdkA.jpg" alt="">
         <h3>Marko Z. Aleksic</h3>
     </div>
     <!-- <a href="#" id="logo"> <img src="./images/logo.png" alt="" /></a>  -->
     <!-- navigation menu -->
     <ul id="navigation" class="unstyled">
-      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#objectives" class="active">Objectives</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -52,100 +52,17 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-  <div id="container"> 
+  <div id="container">
     <!-- page container -->
-    <div class="page" id="home"> 
+    <div class="page" id="objectives">
+        <h3 class="page_title"> Career Objectives</h3>
       <!-- page home -->
       <div class="page_content">
-        <!-- <div class="gf-slider">  -->
-          <!-- slider -->
-          <!-- <ul class="slides">
-            <li> <img src="images/01.jpg" alt="" />
-              <p class="flex-caption"> Super-awesome simplistic-styled easily customizable one page scrolling portfolio
-                template</p>
-            </li>
-            <li> <img src="images/02.jpg" alt="" />
-              <p class="flex-caption"> With Special Customization this template is perfect to be used as a blog template
-                also</p>
-            </li>
-            <li> <img src="images/03.jpg" alt="" />
-              <p class="flex-caption"> Fully responsive layout supported on all devices including tablet and smartphones</p>
-            </li>
-            <li> <img src="images/04.jpg" alt="" />
-              <p class="flex-caption"> Purchase it now to grab it and use it on your work and make experiments with it</p>
-            </li>
-            <li> <img src="images/05.jpg" alt="" />
-              <p class="flex-caption"> Fully responsive layout supported on all devices including tablet and smartphones</p>
-            </li>
-          </ul> -->
-        <!-- </div> -->
-        <!-- services -->
-        <div class="one_half first">
-          <div class="column_content">
-            <h4> Coded with Love!</h4>
-            <img src="images/coded-with-love.png" class="left no_border" alt="" style="margin-top: 10px;
-                                margin-right: 10px" />
-            <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-              felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-              Quisque suscipit fermentum sodales.</small></p>
-          </div>
-        </div>
-        <div class="one_half last">
-          <div class="column_content">
-            <h4> Responsive Layout</h4>
-            <img src="images/responsive.png" class="left no_border" alt="" style="margin-top: 10px;
-                                margin-right: 10px" />
-            <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-              felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-              Quisque suscipit fermentum sodales.</small></p>
-          </div>
-        </div>
-        <div class="space"> </div>
-        <div class="one_half first">
-          <div class="column_content">
-            <h4> Perfect for Portfolios</h4>
-            <img src="./images/for-portfolio.png" class="left no_border" alt="" style="margin-top: 10px;
-                                margin-right: 10px" />
-            <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-              felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-              Quisque suscipit fermentum sodales.</small></p>
-          </div>
-        </div>
-        <div class="one_half last">
-          <div class="column_content">
-            <h4> Easily Customizable</h4>
-            <img src="./images/customizable.png" class="left no_border" alt="" style="margin-top: 10px;
-                                margin-right: 10px" />
-            <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-              felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-              Quisque suscipit fermentum sodales.</small></p>
-          </div>
-        </div>
-        <div class="space"> </div>
-        <div class="one_half first">
-          <div class="column_content">
-            <h4> Image Gallery </h4>
-            <img src="./images/image-gallery.png" class="left no_border" alt="" style="margin-top: 10px;
-                                margin-right: 10px" />
-            <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-              felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-              Quisque suscipit fermentum sodales.</small></p>
-          </div>
-        </div>
-        <div class="one_half last">
-          <div class="column_content">
-            <h4> jQuery Powered</h4>
-            <img src="./images/jquery-code.png" class="left no_border" alt="" style="margin-top: 10px;
-                                margin-right: 10px" />
-            <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-              felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-              Quisque suscipit fermentum sodales.</small></p>
-          </div>
-        </div>
-        <div class="clear"> </div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ratione in similique accusantium dolorem quas ullam est soluta explicabo. Minus, obcaecati, quam neque ipsa voluptatem saepe commodi debitis illum praesentium.
       </div>
     </div>
-    <div class="page" id="education"> 
+    <div class="clearfix"></div>
+    <div class="page" id="education">
       <!-- page about -->
       <h3 class="page_title"> Education</h3>
       <div class="page_content">
@@ -166,10 +83,9 @@
           incididunt ut labore et dolore magna aliqua.
           <p> <small><b>Sarfraz Shoukat</b> - Owner <a href="#">Greepit.com</a></small></p>
         </blockquote>
-        <div class="clear"> </div>
       </div>
     </div>
-    <div class="page" id="experience"> 
+    <div class="page" id="experience">
       <!-- page industries -->
       <h3 class="page_title"> Professional Experience</h3>
       <div class="page_content">
@@ -186,18 +102,17 @@
             </div>
       </div>
     </div>
-    <div class="page" id="skills"> 
+    <div class="page" id="skills">
       <!-- page skills -->
       <h3 class="page_title">Skills</h3>
-      <div class="page_content"> 
+      <div class="page_content">
         <small>PHP</small>
         <div class="progress">
           <div class="bar" style="width: 80%;"></div>
         </div>
-        <div class="clear"> </div>
       </div>
     </div>
-    <div class="page" id="portfolio"> 
+    <div class="page" id="portfolio">
       <!-- page portfolio -->
       <h3 class="page_title"> Portfolio</h3>
       <div class="page_content">
@@ -210,14 +125,22 @@
           <li><a href="#" data-filter=".js">JavaScript</a></li>
           <li><a href="#" data-filter=".css">CSS</a></li>
         </ul>
-        <div class="clear"> </div>
-        <div id="works"> 
-          <!-- works --> 
-          <a rel="prettyPhoto[gallery]" href="images/photos/01.jpg"> <img class="work js" src="images/photos/01.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/03.jpg"> <img class="work css" src="images/photos/03.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/04.jpg"> <img class="work html_php" src="images/photos/04.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/05.jpg"> <img class="work html_php" src="images/photos/05.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/06.jpg"> <img class="work css" src="images/photos/06.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/07.jpg"> <img class="work js" src="images/photos/07.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/08.jpg"> <img class="work html_php" src="./images/photos/08.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/09.jpg"> <img class="work js" src="images/photos/09.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/10.jpg"> <img class="work html_php" src="images/photos/10.jpg" alt="" /> </a> </div>
-        <div class="clear"> </div>
+        <div class="clearfix"></div>
+        <div id="works">
+          <!-- works -->
+          <a rel="prettyPhoto[gallery]" href="images/photos/01.jpg"> <img class="work js" src="images/photos/01.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/03.jpg"> <img class="work css" src="images/photos/03.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/04.jpg"> <img class="work html_php" src="images/photos/04.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/05.jpg"> <img class="work html_php" src="images/photos/05.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/06.jpg"> <img class="work css" src="images/photos/06.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/07.jpg"> <img class="work js" src="images/photos/07.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/08.jpg"> <img class="work html_php" src="./images/photos/08.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/09.jpg"> <img class="work js" src="images/photos/09.jpg" alt="" /> </a>
+          <a rel="prettyPhoto[gallery]" href="images/photos/10.jpg"> <img class="work html_php" src="images/photos/10.jpg" alt="" /> </a>
+        </div>
       </div>
     </div>
-    <div class="page" id="contact"> 
+    <div class="page" id="contact">
       <!-- page contact -->
       <h3 class="page_title">Get in Touch</h3>
       <div class="page_content">
