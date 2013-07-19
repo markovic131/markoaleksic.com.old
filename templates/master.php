@@ -51,13 +51,6 @@
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div id="ma_contact">
-        <address>
-            Industriska Zona 2 <br>
-            1300 Kumanovom, Macedonia <br>
-            +389 70 799 701
-        </address>
-    </div>
   </div>
   <div id="container"> 
     <!-- page container -->
@@ -86,8 +79,6 @@
             </li>
           </ul> -->
         <!-- </div> -->
-        <div class="space"> </div>
-        <div class="clear"> </div>
         <!-- services -->
         <div class="one_half first">
           <div class="column_content">
@@ -230,21 +221,32 @@
       <!-- page contact -->
       <h3 class="page_title">Get in Touch</h3>
       <div class="page_content">
-          <div id="msgs"> </div>
-          <form id="cform" name="cform" method="post" action="">
-            <fieldset>
-            <input class="input-block-level" type="text" id="name" name="name" placeholder="Your Full Name">
-            <input class="input-block-level" type="text" id="email" name="email" placeholder="Your Email Address">
-            <input class="input-block-level" type="text" id="subject" name="subject" placeholder="Subject Matter">
-            <textarea class="input-block-level" rows="6" id="msg" name="message" placeholder="Message/Inquiry"></textarea>
-            <button id="submit" class="btn btn-primary"> Send Message</button>
-            </fieldset>
-          </form>
-        <div class="clear"> </div>
-        <div class="social_icons">
-            <a href="#"><i class="icon icon-facebook-sign icon-2x"></i></a>
-            <a href="#"><i class="icon icon-linkedin-sign icon-2x"></i></a>
-            <a href="#"><i class="icon icon-github-sign icon-2x"></i></a>
+        <div class="row-fluid">
+            <div class="span8">
+              <div id="msgs"></div>
+              <form id="cform" name="cform" method="post" action="">
+                <fieldset>
+                <input class="input-block-level" type="text" id="name" name="name" placeholder="Your Full Name">
+                <input class="input-block-level" type="text" id="email" name="email" placeholder="Your Email Address">
+                <input class="input-block-level" type="text" id="subject" name="subject" placeholder="Subject Matter">
+                <textarea class="input-block-level" rows="6" id="msg" name="message" placeholder="Message/Inquiry"></textarea>
+                <button id="submit" class="btn btn-primary"> Send Message</button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="span4">
+                <address>
+                    Marko Aleksic <br>
+                    Industriska Zona 2 <br>
+                    1300 Kumanovo, Macedonia <br>
+                    +389 70 799 701
+                </address>
+                <div class="social_icons">
+                    <a href="#"><i class="icon icon-facebook-sign icon-2x"></i></a>
+                    <a href="#"><i class="icon icon-linkedin-sign icon-2x"></i></a>
+                    <a href="#"><i class="icon icon-github-sign icon-2x"></i></a>
+                </div>
+            </div>
         </div>
         <!-- <ul class="social_icons">
             <li><a href="#" id="fb" original-title="Join My Fan Club"> <img src="images/facebook.png" alt="Facebook" /></a></li>

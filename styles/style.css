@@ -137,9 +137,10 @@ ul#works_filter li a:hover, ul#works_filter li a.selected {
  *display: inline;
 }
 .social_icons {
-	text-align: center;
+	//text-align: center;
 }
 .social_icons a {
+	margin-right: 5px;
 	color: #ccc;
 	text-decoration: none;
 }
@@ -168,22 +169,22 @@ div.footer {
 }
 .gotop {
 	position:fixed;
-	right:15px;
-	bottom:15px;
+	right:10px;
+	bottom:10px;
 	opacity:.3;
 	padding:10px;
-	color:#fff;
+	color:#333;
 	display:block;
 	text-decoration:none;
 	text-align:center;
-	font-size:13px;
+	font-size:16px;
 	font-weight:bold;
 	z-index:999;
 	transition:all 300ms;
 	-webkit-transition:all 300ms
 }
 .gotop:hover {
-	color:#eee;
+	color:#005580;
 	opacity:.7
 }
 .gotop.hidden {
