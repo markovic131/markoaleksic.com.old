@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato|Rokkitt' rel='stylesheet' type='text/css'>
 <meta charset="UTF-8">
 <title>CV &middot; Marko Aleksic</title>
 
@@ -211,6 +210,6 @@
     </div>
   </div>
 </div>
-<a class="gotop" href="#top">Top</a>
+<a class="gotop" href="#top"><i class="icon icon-arrow-up"></i> go to top</a>
 </body>
 </html>

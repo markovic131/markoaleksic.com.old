@@ -110,6 +110,7 @@ div#sidebar {
 	width:320px;
 	position:relative;
 	border:none;
+	outline: none;
 	float:none;
 	clear:both;
 	padding: 10px;
