@@ -59,7 +59,7 @@
         </address>
     </div>
   </div>
-  <div id="container" class="container"> 
+  <div id="container"> 
     <!-- page container -->
     <div class="page" id="home"> 
       <!-- page home -->
@@ -182,9 +182,17 @@
       <!-- page industries -->
       <h3 class="page_title"> Professional Experience</h3>
       <div class="page_content">
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="row-fluid">
+                <div class="span4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, ad, rem, omnis est blanditiis vel saepe earum voluptates nulla hic doloribus eligendi ut pariatur totam et possimus nihil maxime adipisci?
+                </div>
+                <div class="span4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, modi, eaque, esse, voluptates debitis officiis asperiores expedita sequi assumenda qui ratione explicabo error cupiditate vel veritatis nihil dolor sed deserunt.
+                </div>
+                <div class="span4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, modi, eaque, esse, voluptates debitis officiis asperiores expedita sequi assumenda qui ratione explicabo error cupiditate vel veritatis nihil dolor sed deserunt.
+                </div>
+            </div>
       </div>
     </div>
     <div class="page" id="skills"> 

@@ -1,8 +1,10 @@
 <?php 
 
+if(!$_POST) die('No direct script access allowed.');
+
 // EDIT THE FOLLOWING LINE BELOW AS REQUIRED
 
-$send_email_to = "admin@egrappler.com";
+$send_email_to = "someEmail@gmail.com";
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -29,7 +31,7 @@ function send_email($name,$email,$email_subject,$email_message)
     global $send_email_to;  
 
     $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+    $headers .= "Content-type:text/html;charset=utf-8" . "\r\n";
     $headers .= "From: ".$email. "\r\n";
 
     $message = "<strong>Email = </strong>".$email."<br>";
