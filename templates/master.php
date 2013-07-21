@@ -263,7 +263,7 @@
                         </div>
                         <div class="span4">
                             <address>
-                            <strong>Marko Aleksic</strong><br>
+                            <strong><a href="https://s3-eu-west-1.amazonaws.com/cd-storage/vCard.vcf">Marko Aleksic</a></strong><br>
                             Industriska Zona 2 <br>
                             1300 Kumanovo, Macedonia <br>
                             <script type="text/javascript">
