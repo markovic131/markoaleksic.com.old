@@ -153,7 +153,7 @@ ul#works_filter li a:hover, ul#works_filter li a.selected {
 }
 .social_icons a:hover {
     margin-right: 5px;
-    color: #ccc;
+    color: #0088cc;
     text-decoration: none;
 }
 img.no_border {
@@ -173,6 +173,8 @@ ul.pagination a:link, ul.pagination a:visited {
     padding:5px 10px
 }
 div.footer {
+    text-transform: uppercase;
+    color: #678;
     text-align:center;
     font-size:12px;
     padding:15px 0

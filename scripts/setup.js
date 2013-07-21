@@ -117,14 +117,14 @@ function sendMessage() {
 
     // check if all the fields are filled
     if (name == '' || name == 'Full Name*' || email == '' || email == 'Email Address*' || subject == '' || subject == 'Subject*' || msg == '' || msg == 'Your Message*') {
-        $("div#msgs").html('<p class="alert alert-error">All fields are required!</p>');
+        $("div#msgs").html('<p class="alert alert-error">All fields are required</p>');
 
         return false;
     }
 
     // verify the email address
     if (!checkEmail(email)) {
-        $("div#msgs").html('<p class="alert alert-error">Please enter a valid Email Address</p>');
+        $("div#msgs").html('<p class="alert alert-error">Please enter a valid email address</p>');
         return false;
     }
 
@@ -156,7 +156,7 @@ function sendMessage() {
 
         },
         error: function () {
-            $("div#msgs").html('<p class="alert alert-error">Could not complete your request. Sorry!</p>');
+            $("div#msgs").html('<p class="alert alert-error">Could not complete your request. Try again!</p>');
         }
     });
 
