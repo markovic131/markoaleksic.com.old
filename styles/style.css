@@ -1,11 +1,23 @@
-body {font-family: "Lato"; background:#666; color: #222;}
+body {
+    font-family: "Lato";
+    //background:#666;
+    color: #222;
+    background: url(../images/bck.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 h1,h2,h3,h4,h5,h5 {color: #333; font-family: "Rokkitt";}
 ::selection {background: #B3FF40;}
 ::-moz-selection {background: #B3FF40;}
 div#wrap {
     width:980px;
     position:relative;
-    margin:0 auto!important
+    margin:0 auto!important;
+    zoom: 1;
+    filter: alpha(opacity=95);
+    opacity: 0.95;
 }
 div#sidebar {
     width:220px;
@@ -70,7 +82,7 @@ div.page {
     padding-top:20px
 }
 div.page_content {
-    padding:25px 0 40px 25px
+    padding:25px 0 25px 25px
 }
 div#container h3.page_title {
     margin-left:25px;
