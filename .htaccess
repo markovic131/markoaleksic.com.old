@@ -1,3 +1,37 @@
+# ------- HostGator settings -------
+# Use PHP 5.4
+# AddType application/x-httpd-php54 .php
+
+AddDefaultCharset utf-8
+# ----------------------------------
+
+<IfModule mod_deflate.c>
+  <FilesMatch "\.(css|js|xml)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault A86400
+  ExpiresByType image/png A604800
+  ExpiresByType image/gif A604800
+  ExpiresByType image/jpg A604800
+  ExpiresByType image/jpeg A604800
+  ExpiresByType text/javascript A1209600
+  ExpiresByType application/javascript A1209600
+  ExpiresByType application/x-javascript A1209600
+  ExpiresByType text/css A1209600
+</IfModule>
+
+#-------------------------------------
+
 RewriteEngine On
 
 # Some hosts may require you to use the `RewriteBase` directive.
