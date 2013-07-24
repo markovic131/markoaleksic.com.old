@@ -1,8 +1,5 @@
 <?php
 
-session_cache_limiter(false);
-session_start();
-
 ///////////////////////////////////////////////////////////
 // --------------------- VARIABLES --------------------- //
 ///////////////////////////////////////////////////////////
@@ -42,7 +39,7 @@ $app->post('/post-contact', function() use ($app) {
         {
             send_email($name, $email, $subject, $message);
         }
-        
+
         if($req->isAjax())
         {
             header('Content-type: text/json');
@@ -95,26 +92,26 @@ function validate($name,$email,$message,$subject)
     {
         $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-        if(!preg_match($email_exp,$email)) 
+        if(!preg_match($email_exp,$email))
         {
             $return_array['success'] = '0';
-            array_push($return_array['errors'],'Enter valid email'); 
+            array_push($return_array['errors'],'Enter valid email');
         }
     }
 
     if($name == '')
     {
         $return_array['success'] = '0';
-        array_push($return_array['errors'],'Name is required'); 
+        array_push($return_array['errors'],'Name is required');
     }
     else
     {
         $string_exp = "/^[A-Za-z .'-]+$/";
-        
-        if (!preg_match($string_exp, $name)) 
+
+        if (!preg_match($string_exp, $name))
         {
             $return_array['success'] = '0';
-            array_push($return_array['errors'],'Enter valid name'); 
+            array_push($return_array['errors'],'Enter valid name');
         }
     }
 
@@ -132,7 +129,7 @@ function validate($name,$email,$message,$subject)
     }
     else
     {
-        if (strlen($message) < 2) 
+        if (strlen($message) < 2)
         {
             $return_array['success'] = '0';
             array_push($return_array['errors'],'Enter valid message');
