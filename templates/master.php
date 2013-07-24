@@ -12,15 +12,7 @@
         <link rel="stylesheet" href="css/style.css" media="screen" />
         <link rel="stylesheet" href="css/media-queries.css" />
 
-
         <link rel="shortcut icon" href="img/favicon.ico">
-
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.2/waypoints.js"></script>
-        <script src="js/app.js"></script>
     </head>
     <body>
     <div id="wrap">
@@ -304,5 +296,13 @@
         </div>
     </div>
         <a class="gotop" href="#top"><i class="icon icon-arrow-up"></i> go to top</a>
+
+        <!-- le java scirpt -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.2/waypoints.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
