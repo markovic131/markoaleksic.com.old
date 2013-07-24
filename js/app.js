@@ -1,20 +1,19 @@
 //Setup flex slider
-$(window).load(function () {
-    $('.gf-slider').flexslider();
-});
+// $(window).load(function () {
+//     $('.gf-slider').flexslider();
+// });
 //Setup Page
-$(document).ready(function () {
+$(function () {
+
     //Initialize PrettyPhoto here
-    $("a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'normal', theme: 'facebook', slideshow: 3000, autoplay_slideshow: false, social_tools: false 	});
-	
 	//Remove this line if you want to naviagate to url on each client box click
-	$('#clients.grid a').click(function(){return false;});
+	//$('#clients.grid a').click(function(){return false;});
     //Initialize jQuery knob here
-    $(".knob").knob();
+    //$(".knob").knob();
     //Initialie tipsy here
-    $('#fb').tipsy({ gravity: 'n', fade: true });
-    $('#tw').tipsy({ gravity: 'n', fade: true });
-    $('#ld').tipsy({ gravity: 'n', fade: true });
+    // $('#fb').tipsy({ gravity: 'n', fade: true });
+    // $('#tw').tipsy({ gravity: 'n', fade: true });
+    // $('#ld').tipsy({ gravity: 'n', fade: true });
     /* smooth-scroll */
     $("ul#navigation a").smoothScroll({
         afterScroll: function () {
@@ -26,16 +25,16 @@ $(document).ready(function () {
     //Scroll
     $('div.page').waypoint(function () {
         var id = $(this).attr('id');
-
         $('ul#navigation a.active').removeClass('active');
         $('ul#navigation a[href="#' + id + '"]').addClass('active');
+
     });
 
     /* fixes */
     $(window).scroll(function () {
         if ($(window).scrollTop() === 0) {
             $('ul#navigation a.active').removeClass('active');
-            $('ul#navigation a[href="#home"]').addClass('active');
+            $('ul#navigation a[href="#objectives"]').addClass('active');
         } else if ($(window).height() + $(window).scrollTop() === $('#container').height()) {
             $('ul#navigation a.active').removeClass('active');
             $('ul#navigation a[href^="#"]:last').addClass('active');
@@ -65,25 +64,25 @@ $(document).ready(function () {
         return false;
     });
 
-    var $container = $('div#works').isotope({
-        itemSelector: 'img.work',
-        layoutMode: 'fitRows'
-    });
+    // var $container = $('div#works').isotope({
+    //     itemSelector: 'img.work',
+    //     layoutMode: 'fitRows'
+    // });
 
-    // items filter
-    $('#works_filter a').click(function () {
-        var selector = $(this).attr('data-filter');
-        $('div#works').isotope({
-            filter: selector,
-            itemSelector: 'img.work',
-            layoutMode: 'fitRows'
-        });
+    // // items filter
+    // $('#works_filter a').click(function () {
+    //     var selector = $(this).attr('data-filter');
+    //     $('div#works').isotope({
+    //         filter: selector,
+    //         itemSelector: 'img.work',
+    //         layoutMode: 'fitRows'
+    //     });
 
-        $('#works_filter').find('a.selected').removeClass('selected');
-        $(this).addClass('selected');
+    //     $('#works_filter').find('a.selected').removeClass('selected');
+    //     $(this).addClass('selected');
 
-        return false;
-    });
+    //     return false;
+    // });
 
     //smooth scroll top
     $('.gotop').addClass('hidden');
@@ -114,11 +113,11 @@ function sendMessage() {
     var email = $("input#email").val();
     var subject = $("input#subject").val();
     var msg = $("textarea#msg").val();
+    var submitBtn = $('button#submit');
 
     // check if all the fields are filled
-    if (name == '' || name == 'Full Name*' || email == '' || email == 'Email Address*' || subject == '' || subject == 'Subject*' || msg == '' || msg == 'Your Message*') {
+    if (name == '' || email == '' || subject == '' || msg == '') {
         $("div#msgs").html('<p class="alert alert-error">All fields are required</p>');
-
         return false;
     }
 
@@ -127,36 +126,26 @@ function sendMessage() {
         $("div#msgs").html('<p class="alert alert-error">Please enter a valid email address</p>');
         return false;
     }
+    submitBtn.prop('disabled',true).html('<i class="icon-spinner icon-spin"></i>');
 
-    // make the AJAX request
-    var dataString = $('#cform').serialize();
     $.ajax({
         type: "POST",
         url: 'post-contact',
-        data: dataString,
+        data: $('#cform').serialize(),
         dataType: 'json',
         success: function (data) {
-            if (data.success == 0) {
-                var errors = '<ul><li>';
-                if (data.name_msg != '')
-                    errors += data.name_msg + '</li>';
-                if (data.email_msg != '')
-                    errors += '<li>' + data.email_msg + '</li>';
-                if (data.message_msg != '')
-                    errors += '<li>' + data.message_msg + '</li>';
-                if (data.subject_msg != '')
-                    errors += '<li>' + data.subject_msg + '</li>';
-
-                $("div#msgs").html('<p class="alert alert-error">Could not complete your request. See the errors below!</p>' + errors);
-            }
-            else if (data.success == 1) {
+            if (data.success == 1) {
                 $("div#msgs").html('<p class="alert alert-success">You message has been sent successfully!</p>');
                 $('#cform')[0].reset();
+                submitBtn.prop('disabled',false).html('<strong>Send</strong>');        
+            } else {
+                $("div#msgs").html('<p class="alert alert-error">Could not complete your request. Try again!</p>');
+                submitBtn.prop('disabled',false).html('<strong>Send</strong>');
             }
-
         },
         error: function () {
             $("div#msgs").html('<p class="alert alert-error">Could not complete your request. Try again!</p>');
+            submitBtn.prop('disabled',false).html('<strong>Send</strong>');
         }
     });
 

@@ -1,5 +1,8 @@
 <?php
 
+session_cache_limiter(false);
+session_start();
+
 ///////////////////////////////////////////////////////////
 // --------------------- VARIABLES --------------------- //
 ///////////////////////////////////////////////////////////
@@ -24,21 +27,32 @@ $app->get('/',function () use ($app) {
         return $app->render('master.php');
     });
 
-$app->post('/post-contact', function() {
-        $name    = $_POST['name'];
-        $email   = $_POST['email'];
-        $message = $_POST['message'];
-        $subject = $_POST['subject'];
+$app->post('/post-contact', function() use ($app) {
 
-        $return_array = validate($name,$email,$message,$subject);
+        $req = $app->request();
+
+        $name    = $req->post('name');
+        $email   = $req->post('email');
+        $message = $req->post('message');
+        $subject = $req->post('subject');
+
+        $return_array = validate($name, $email, $message, $subject);
 
         if($return_array['success'] == '1')
         {
-            send_email($name,$email,$subject,$message);
+            send_email($name, $email, $subject, $message);
+        }
+        
+        if($req->isAjax())
+        {
+            header('Content-type: text/json');
+            echo json_encode($return_array);
+        }
+        else
+        {
+            $app->redirect($_SERVER['HTTP_REFERER'].'#contact');
         }
 
-        header('Content-type: text/json');
-        echo json_encode($return_array);
         die();
     });
 
@@ -52,16 +66,17 @@ $app->run();
 // --------------------- PRIVATE FUNCTIONS --------------------- //
 ///////////////////////////////////////////////////////////////////
 
-function send_email($name,$email,$email_subject,$email_message)
+function send_email($name, $email, $email_subject, $email_message)
 {
     $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=utf-8" . "\r\n";
-    $headers .= "From: ".$email. "\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
+    $headers .= "From: " . $email . "\r\n";
 
-    $message = "<strong>Email = </strong>".$email."<br>";
-    $message .= "<strong>Name = </strong>".$name."<br>";
-    $message .= "<strong>Message = </strong>".$email_message."<br>";
+    $message = "<strong>Name: </strong>" . $name . "<br>";
+    $message .= "<strong>Message:</strong>" . "<br>" . $email_message . "<br>";
+
     @mail(TOEMAIL, $email_subject, $message,$headers);
+
     return true;
 }
 
@@ -69,15 +84,12 @@ function validate($name,$email,$message,$subject)
 {
     $return_array                = array();
     $return_array['success']     = '1';
-    $return_array['name_msg']    = '';
-    $return_array['email_msg']   = '';
-    $return_array['message_msg'] = '';
-    $return_array['subject']     = '';
+    $return_array['errors']      = array();
 
     if($email == '')
     {
         $return_array['success'] = '0';
-        $return_array['email_msg'] = 'email is required';
+        array_push($return_array['errors'],'Email is required');
     }
     else
     {
@@ -86,14 +98,14 @@ function validate($name,$email,$message,$subject)
         if(!preg_match($email_exp,$email)) 
         {
             $return_array['success'] = '0';
-            $return_array['email_msg'] = 'enter valid email.';  
+            array_push($return_array['errors'],'Enter valid email'); 
         }
     }
 
     if($name == '')
     {
         $return_array['success'] = '0';
-        $return_array['name_msg'] = 'name is required';
+        array_push($return_array['errors'],'Name is required'); 
     }
     else
     {
@@ -102,7 +114,7 @@ function validate($name,$email,$message,$subject)
         if (!preg_match($string_exp, $name)) 
         {
             $return_array['success'] = '0';
-            $return_array['name_msg'] = 'enter valid name.';
+            array_push($return_array['errors'],'Enter valid name'); 
         }
     }
 
@@ -110,20 +122,20 @@ function validate($name,$email,$message,$subject)
     if($subject == '')
     {
         $return_array['success'] = '0';
-        $return_array['subject_msg'] = 'subject is required';
+        array_push($return_array['errors'],'Subject is required');
     }
 
     if($message == '')
     {
         $return_array['success'] = '0';
-        $return_array['message_msg'] = 'message is required';
+        array_push($return_array['errors'],'Message is required');
     }
     else
     {
         if (strlen($message) < 2) 
         {
             $return_array['success'] = '0';
-            $return_array['message_msg'] = 'enter valid message.';
+            array_push($return_array['errors'],'Enter valid message');
         }
     }
     return $return_array;

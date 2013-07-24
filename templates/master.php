@@ -4,30 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href='http://fonts.googleapis.com/css?family=Lato|Rokkitt' rel='stylesheet' type='text/css'>
-        <title>CV &middot; Marko Aleksic</title>
+        <title>Marko Aleksić</title>
 
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles/style.css" media="screen" />
-        <link rel="stylesheet" href="styles/media-queries.css" />
-        <link rel="stylesheet" href="./flex-slider/flexslider.css" type="text/css" media="screen" />
-        <link href="styles/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/tipsy.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/style.css" media="screen" />
+        <link rel="stylesheet" href="css/media-queries.css" />
 
 
-        <link rel="shortcut icon" href="./images/favicon.ico">
+        <link rel="shortcut icon" href="img/favicon.ico">
 
-        <script src="./scripts/jquery-1.7.1.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="./flex-slider/jquery.flexslider-min.js"></script>
-        <script src="./scripts/jquery.prettyPhoto.js"></script>
-        <script src="./scripts/jquery.tipsy.js"></script>
-        <script src="./scripts/jquery.knob.js"></script>
-        <script src="./scripts/jquery.isotope.min.js"></script>
-        <script src="./scripts/jquery.smooth-scroll.min.js"></script>
-        <script src="./scripts/waypoints.min.js"></script>
-        <script src="./scripts/setup.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.2/waypoints.js"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>
     <div id="wrap">
@@ -36,7 +29,7 @@
             <!-- the  sidebar -->
             <!-- logo -->
             <div id="ma_holder" class="text-center">
-                <img width="200px" class="img-circle" src="./images/123hIDA72hfdkA.jpg" alt="">
+                <img width="200px" class="img-circle" src="img/123hIDA72hfdkA.jpg" alt="">
                 <h3>Marko Z. Aleksic</h3>
             </div>
             <!-- navigation menu -->
@@ -251,7 +244,7 @@
                                 If you'd like to get in touch with me about work related stuff, or just say hello; fill the form below or use another medium <i class="icon icon-arrow-right"></i>
                             </p>
                             <div id="msgs"></div>
-                            <form id="cform" name="cform" method="post" action="">
+                            <form id="cform" name="cform" method="post" action="post-contact">
                                 <fieldset>
                                     <input class="input-block-level" type="text" id="name" name="name" placeholder="Your Full Name">
                                     <input class="input-block-level" type="text" id="email" name="email" placeholder="Your Email Address">
