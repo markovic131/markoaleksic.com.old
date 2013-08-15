@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/style.css" media="screen" />
         <link rel="stylesheet" href="css/media-queries.css" />
 
-        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
     <div id="wrap">

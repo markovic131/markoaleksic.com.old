@@ -5,6 +5,8 @@
 //Setup Page
 $(function () {
 
+    $(function(){$('a[href*="://"], form[action*="://"]').not($('a[href*="://'+location.host+'"]')).attr('target','_blank');});
+
     //Initialize PrettyPhoto here
 	//Remove this line if you want to naviagate to url on each client box click
 	//$('#clients.grid a').click(function(){return false;});
