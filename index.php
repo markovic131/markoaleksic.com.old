@@ -47,7 +47,7 @@ $app->post('/post-contact', function() use ($app) {
         }
         else
         {
-            $app->redirect($_SERVER['HTTP_REFERER'].'#contact');
+            $app->redirect($_SERVER['HTTP_REFERER'] . '#contact');
         }
 
         die();
