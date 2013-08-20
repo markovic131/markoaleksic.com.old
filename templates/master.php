@@ -4,15 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href='http://fonts.googleapis.com/css?family=Lato|Rokkitt' rel='stylesheet' type='text/css'>
-        <title>Marko Aleksić &middot; CV</title>
-
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Marko Aleksić</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" media="screen" />
         <link rel="stylesheet" href="css/media-queries.css" />
-
-        <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
     <div id="wrap">
