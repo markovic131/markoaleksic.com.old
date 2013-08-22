@@ -26,12 +26,13 @@ $app = new \Slim\Slim(array(
 $app->get('/',function () use ($app) {
 
         $data = array(
-            'title'       => 'The CV of Marko Aleksić',
-            'description' => 'Professional website and CV of Marko Aleksić.',
-            'keywords'    => 'Marko, Aleksic, CV, web, developer, professional, 
-            career, personal, consulting, business, software',
-            'author'      => 'Marko Aleksić',
-            'sections'    => array(
+            'title'             => 'The CV of Marko Aleksić',
+            'description'       => 'Professional website and CV of Marko Aleksić.',
+            'keywords'          => 'Marko, Aleksic, CV, web, developer, professional, career, personal, consulting, business, software',
+            'author'            => 'Marko Aleksić',
+            'googleAnalyticsId' => 'UA-43415136-1',
+            'domain'            => 'markoaleksic.com',
+            'sections'          => array(
                     'career',
                     'education',
                     'experience',
