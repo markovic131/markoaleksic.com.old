@@ -14,14 +14,34 @@ require '_lib/Slim/Slim.php';
 
 \Slim\Slim::registerAutoloader();
 
-$app = new \Slim\Slim();
+$app = new \Slim\Slim(array(
+    'debug' => false,
+    'mode'  => 'production'
+));
 
 ////////////////////////////////////////////////////////
 // --------------------- ROUTES --------------------- //
 ////////////////////////////////////////////////////////
 
 $app->get('/',function () use ($app) {
-        return $app->render('master.php');
+
+        $data = array(
+            'title'       => 'The CV of Marko Aleksić',
+            'description' => 'Professional website and CV of Marko Aleksić.',
+            'keywords'    => 'Marko, Aleksic, CV, web, developer, professional, 
+            career, personal, consulting, business, software',
+            'author'      => 'Marko Aleksić',
+            'sections'    => array(
+                    'career',
+                    'education',
+                    'experience',
+                    'skills',
+                    'projects',
+                    'contact'
+                )
+            );
+
+        return $app->render('master.php',$data);
     });
 
 $app->post('/post-contact', function() use ($app) {
@@ -35,18 +55,15 @@ $app->post('/post-contact', function() use ($app) {
 
         $return_array = validate($name, $email, $message, $subject);
 
-        if($return_array['success'] == '1')
-        {
+        if($return_array['success'] == '1') {
             send_email($name, $email, $subject, $message);
         }
 
-        if($req->isAjax())
-        {
+        if($req->isAjax()) {
             header('Content-type: text/json');
             echo json_encode($return_array);
         }
-        else
-        {
+        else {
             $app->redirect($_SERVER['HTTP_REFERER'] . '#contact');
         }
 
@@ -83,54 +100,44 @@ function validate($name,$email,$message,$subject)
     $return_array['success']     = '1';
     $return_array['errors']      = array();
 
-    if($email == '')
-    {
+    if($email == '') {
         $return_array['success'] = '0';
         array_push($return_array['errors'],'Email is required');
     }
-    else
-    {
+    else {
         $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-        if(!preg_match($email_exp,$email))
-        {
+        if(!preg_match($email_exp,$email)) {
             $return_array['success'] = '0';
             array_push($return_array['errors'],'Enter valid email');
         }
     }
 
-    if($name == '')
-    {
+    if($name == '') {
         $return_array['success'] = '0';
         array_push($return_array['errors'],'Name is required');
     }
-    else
-    {
+    else {
         $string_exp = "/^[A-Za-z .'-]+$/";
 
-        if (!preg_match($string_exp, $name))
-        {
+        if (!preg_match($string_exp, $name)) {
             $return_array['success'] = '0';
             array_push($return_array['errors'],'Enter valid name');
         }
     }
 
 
-    if($subject == '')
-    {
+    if($subject == '') {
         $return_array['success'] = '0';
         array_push($return_array['errors'],'Subject is required');
     }
 
-    if($message == '')
-    {
+    if($message == '') {
         $return_array['success'] = '0';
         array_push($return_array['errors'],'Message is required');
     }
-    else
-    {
-        if (strlen($message) < 2)
-        {
+    else {
+        if (strlen($message) < 2) {
             $return_array['success'] = '0';
             array_push($return_array['errors'],'Enter valid message');
         }
