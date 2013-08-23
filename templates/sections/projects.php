@@ -9,7 +9,10 @@
                 <h3>Diamond ERP</h3>
                 <p>Diamond ERP is custom made enterprise resource planning for small-medium sized business', with simplicity and ease of use in mind. Developed initially for manufacturing companies; Diamond ERP can be also used by trading companies in range of different industries. Build on open-source popular PHP framework - <a href="http://ellislab.com/codeigniter">CodeIgniter</a>, Diamond ERP can be easily modified or extended with new features. <br></p>
                 <p class="text-muted"><strong>Technlology:</strong> PHP | MySQL | HTML | CSS | JavaScript | Twitter Bootstrap</p>
-                <a href="#contact" class="btn btn-primary">Request a Demo</a>
+                <a href="http://diamond.markoaleksic.com" class="btn btn-success" target="_blank">Demo</a>
+                <span class="text-muted">
+                    <strong>username:</strong> demouser <strong>password:</strong> demopassword
+                </span>
                 <hr>
 
                 <!-- Carnia PMS -->
@@ -29,6 +32,7 @@
                     authentication library, production ready structure, custom environment config files, global class autoloading, core classes for different access levels, users and groups CRUD,
                     assets library, flash messages library, AWS S3 and many more.</p>
                 <p class="text-muted"><strong>Technlology:</strong> PHP | MySQL | HTML | CSS | JavaScript | Twitter Bootstrap 3.0 | AWS S3</p>
+                <a href="http://unleash.markoaleksic.com" class="btn btn-success" target="_blank">Demo</a>
                 <a href="https://github.com/psybaron/Unleash" class="btn btn-primary">Download on GitHub</a>
                 <hr>
 
