@@ -61,12 +61,14 @@
                         //]]>
                     </script>
                 <br>
-                +389 70 799 701
+                ++389 70 799 701
                 </p>
                 </address>
                 <div class="social-icons">
-                    <a href="http://www.linkedin.com/in/aleksicmarko"><i class="icon icon-linkedin-sign icon-2x"></i></a>
-                    <a href="https://github.com/psybaron"><i class="icon icon-github-sign icon-2x"></i></a>
+                    <a href="http://www.linkedin.com/in/aleksicmarko" title="LinkedIn"><i class="icon icon-2x icon-linkedin-sign icon-large"></i></a>
+                    <a href="https://github.com/psybaron" title="GitHub"><i class="icon icon-2x icon-github-sign icon-large"></i></a>
+                    <a href="http://stackoverflow.com/users/641048/marko-aleksic" title="StackOverflow"><i class="icon icon-2x icon-stackexchange icon-large"></i></a>
+                    <a href="http://wizpert.com/marko" title="Wizpert"><i class="icon icon-2x icon-comment icon-large"></i></a>
                 </div>
             </div>
         </div>
