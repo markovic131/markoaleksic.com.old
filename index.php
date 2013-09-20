@@ -52,9 +52,10 @@ $app->post('/post-contact', function() use ($app) {
         $name    = $req->post('name');
         $email   = $req->post('email');
         $message = $req->post('message');
-        $subject = $req->post('subject');
 
-        $return_array = validate($name, $email, $message, $subject);
+        $return_array = validate($name, $email, $message);
+
+        $subject = "[MarkoAleksic.com] - {$name} has requested information.";
 
         if($return_array['success'] == '1') {
             send_email($name, $email, $subject, $message);
@@ -81,21 +82,25 @@ $app->run();
 // --------------------- PRIVATE FUNCTIONS --------------------- //
 ///////////////////////////////////////////////////////////////////
 
-function send_email($name, $email, $email_subject, $email_message)
+function send_email($to, $clientName, $clientEmail, $emailSubject, $clientMessage)
 {
-    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers  = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
-    $headers .= "From: " . $email . "\r\n";
+    $headers .= "From: {$clientName} <{$clientEmail}>" . "\r\n";
 
-    $message = "<strong>Name: </strong>" . $name . "<br>";
-    $message .= "<strong>Message:</strong>" . "<br>" . $email_message . "<br>";
+    $message  = "<strong>Name:</strong> {$clientName} <{$clientEmail}><br>";
+    $message .= "<hr>";
+    $message .= "{$clientMessage}<br>";
+    $message .= "<hr><br>";
+    $message .= '<strong>Request Time:</strong> ' . date("Y-m-d H:i:s", $_SERVER['REQUEST_TIME']) . "<br>";
+    $message .= '<strong>Remote Address:</strong> ' . $_SERVER['REMOTE_ADDR'] . "<br>";
 
-    @mail(TOEMAIL, $email_subject, $message,$headers);
+    @mail(TOEMAIL, $emailSubject, $message, $headers);
 
     return true;
 }
 
-function validate($name,$email,$message,$subject)
+function validate($name,$email,$message)
 {
     $return_array                = array();
     $return_array['success']     = '1';
@@ -125,12 +130,6 @@ function validate($name,$email,$message,$subject)
             $return_array['success'] = '0';
             array_push($return_array['errors'],'Enter valid name');
         }
-    }
-
-
-    if($subject == '') {
-        $return_array['success'] = '0';
-        array_push($return_array['errors'],'Subject is required');
     }
 
     if($message == '') {

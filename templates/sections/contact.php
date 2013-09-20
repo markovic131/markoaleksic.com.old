@@ -19,14 +19,10 @@
                         <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject Matter</label>
-                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject Matter">
-                    </div>
-                    <div class="form-group">
                         <label for="message">Message/Inquiry</label>
-                        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message/Inquiry"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="9" placeholder="Message/Inquiry"></textarea>
                     </div>
-                    <button type="submit" id="submit" class="btn btn-md btn-primary">Submit</button>
+                    <button type="submit" id="submit" class="btn btn-lg btn-primary">Submit</button>
                 </form>
                 <br>
             </div>
@@ -61,7 +57,7 @@
                         //]]>
                     </script>
                 <br>
-                ++389 70 799 701
+                +389 70 799 701
                 </p>
                 </address>
                 <div class="social-icons">
@@ -70,6 +66,9 @@
                     <a href="http://stackoverflow.com/users/641048/marko-aleksic" title="StackOverflow"><i class="icon icon-2x icon-stackexchange icon-large"></i></a>
                     <a href="http://wizpert.com/marko" title="Wizpert"><i class="icon icon-2x icon-comment icon-large"></i></a>
                 </div>
+                <hr>
+                <a class="btn btn-danger btn-block" href="https://s3-eu-west-1.amazonaws.com/cd-storage/marko_aleksic_cv.pdf">Download my CV</a>
+                <a class="btn btn-info btn-block" href="https://s3-eu-west-1.amazonaws.com/cd-storage/vCard.vcf">Download my vCard</a>
             </div>
         </div>
     </div>

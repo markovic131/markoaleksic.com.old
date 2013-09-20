@@ -69,12 +69,11 @@ function sendMessage() {
     // receive the provided data
     var name = $("input#name").val();
     var email = $("input#email").val();
-    var subject = $("input#subject").val();
     var msg = $("textarea#message").val();
     var submitBtn = $('button#submit');
 
     // check if all the fields are filled
-    if (name == '' || email == '' || subject == '' || msg == '') {
+    if (name == '' || email == '' || msg == '') {
         $("div#msgs").html('<p class="alert alert-danger">All fields are required</p>');
         return false;
     }
