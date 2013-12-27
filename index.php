@@ -15,8 +15,8 @@ require '_lib/Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim(array(
-    'debug' => false,
-    'mode'  => 'production'
+    'debug' => true,
+    'mode'  => 'testing'
 ));
 
 ////////////////////////////////////////////////////////
