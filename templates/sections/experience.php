@@ -10,8 +10,10 @@
             </p>
             <p>Developer</p>
             <ul>
-                <li>developing custom CMS systems.</li>
-                <li>developing Joomla extensions and libraries.</li>
+                <li>developing modern web app using cutting edge technologies</li>
+                <li>building custom e-commerce solutions</li>
+                <li>developing custom static and dynamic CMS systems</li>
+                <li>developing Joomla extensions and libraries</li>
             </ul>
         </div>
         <div class="col-md-4 text-right">

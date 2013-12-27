@@ -61,14 +61,17 @@
                 </p>
                 </address>
                 <div class="social-icons">
-                    <a href="http://www.linkedin.com/in/aleksicmarko" title="LinkedIn"><i class="icon icon-2x icon-linkedin-sign icon-large"></i></a>
-                    <a href="https://github.com/psybaron" title="GitHub"><i class="icon icon-2x icon-github-sign icon-large"></i></a>
-                    <a href="http://stackoverflow.com/users/641048/marko-aleksic" title="StackOverflow"><i class="icon icon-2x icon-stackexchange icon-large"></i></a>
-                    <a href="http://wizpert.com/marko" title="Wizpert"><i class="icon icon-2x icon-comment icon-large"></i></a>
+                    <a href="http://www.linkedin.com/in/aleksicmarko" title="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                    <a href="https://github.com/psybaron" title="GitHub"><i class="fa fa-2x fa-github-square"></i></a>
+                    <a href="http://stackoverflow.com/users/641048/marko-aleksic" title="StackOverflow"><i class="fa fa-2x fa-stack-overflow"></i></a>
                 </div>
                 <hr>
-                <a class="btn btn-danger btn-block" href="https://s3-eu-west-1.amazonaws.com/cd-storage/marko_aleksic_cv.pdf">Download my CV</a>
-                <a class="btn btn-info btn-block" href="https://s3-eu-west-1.amazonaws.com/cd-storage/vCard.vcf">Download my vCard</a>
+                <!-- <a class="btn btn-danger btn-block"
+                    href="https://s3-eu-west-1.amazonaws.com/cd-storage/marko_aleksic_cv.pdf">
+                    <i class="fa fa-arrow-down fa-fw"></i> Download my CV</a> -->
+                <a class="btn btn-info btn-block"
+                    href="https://s3-eu-west-1.amazonaws.com/cd-storage/vCard.vcf">
+                    <i class="fa fa-arrow-down fa-fw"></i> vCard</a>
             </div>
         </div>
     </div>

@@ -9,8 +9,8 @@
         <meta name="keywords" content="<?=$keywords?>">
         <meta name="author" content="<?=$author?>">
         <title><?=$title?></title>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" media="screen" />
         <link rel="shortcut icon" href="favicon.ico" />
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,18 +20,10 @@
         <![endif]-->
     </head>
     <body>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', '<?=$googleAnalyticsId?>', '<?=$domain?>');
-          ga('send', 'pageview');
-        </script>
     <div id="wrap">
         <div id="sidebar">
             <div id="person-name-holder" class="text-center">
-                <img class="img-circle img-responsive" src="img/123hIDA72hfdkA.jpg" alt="">
+                <img class="img-circle img-responsive" src="img/ma_image.jpg" alt="">
                 <h3>Marko Z. Aleksic</h3>
             </div>
             <ul id="navigation" class="list-unstyled">
@@ -55,13 +47,21 @@
             </div>
         </div>
     </div>
-        <a class="gotop" href="#top"><i class="icon icon-arrow-up"></i> go to top</a>
+        <a class="gotop" href="#top"><i class="fa fa-arrow-up"></i> go to top</a>
         <!-- le java scirpt -->
-        <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script async src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script async src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.js"></script>
         <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
         <script async src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.2/waypoints.js"></script>
         <script async src="js/app.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', '<?=$googleAnalyticsId?>', '<?=$domain?>');
+          ga('send', 'pageview');
+        </script>
     </body>
 </html>

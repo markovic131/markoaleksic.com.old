@@ -9,9 +9,9 @@
                 <h3>Diamond ERP</h3>
                 <p>Diamond ERP is custom made enterprise resource planning for small-medium sized business', with simplicity and ease of use in mind. Developed initially for manufacturing companies; Diamond ERP can be also used by trading companies in range of different industries. Build on open-source popular PHP framework - <a href="http://ellislab.com/codeigniter">CodeIgniter</a>, Diamond ERP can be easily modified or extended with new features. <br></p>
                 <p class="text-muted"><strong>Technlology:</strong> PHP | MySQL | HTML | CSS | JavaScript | Twitter Bootstrap</p>
-                <a href="http://diamond.markoaleksic.com" class="btn btn-success" target="_blank">Demo</a>
+                <a href="http://diamond.markoaleksic.com" class="btn btn-success" target="_blank"><i class="fa fa-cogs"></i> Demo</a>
                 <span class="text-muted">
-                    <strong>username:</strong> demouser <strong>password:</strong> demopassword
+                    demouser / demopassword
                 </span>
                 <hr>
 
@@ -32,26 +32,28 @@
                     authentication library, production ready structure, custom environment config files, global class autoloading, core classes for different access levels, users and groups CRUD,
                     assets library, flash messages library, AWS S3 and many more.</p>
                 <p class="text-muted"><strong>Technlology:</strong> PHP | MySQL | HTML | CSS | JavaScript | Twitter Bootstrap 3.0 | AWS S3</p>
-                <a href="http://unleash.markoaleksic.com" class="btn btn-success" target="_blank">Demo</a>
-                <a href="https://github.com/psybaron/Unleash" class="btn btn-primary">Download on GitHub</a>
+                <a href="http://unleash.markoaleksic.com" class="btn btn-success" target="_blank"><i class="fa fa-cogs"></i> Demo</a>
+                <a href="https://github.com/psybaron/Unleash" class="btn btn-primary"><i class="fa fa-arrow-down"></i> Download on GitHub</a>
                 <hr>
 
-                <!-- Fortis -->
-                <h3>Fortis Ltd. - <a href="http://fortis.mk">fortis.mk</a></h3>
-                <p>Corporate dynamic website and CMS built on Carnia PMS</p>
+                <!-- Evee by Ivana Cvetkovska -->
+                <h3>Evee Couture by Ivana Cvetkovska - <a href="http://eveecouture.com">eveecouture.com</a></h3>
+                <p></p>
                     <ul>
-                        <li>Facebook API Integration</li>
+                        <li>E-Shop</li>
+                        <li>Product Managnment Backend</li>
+                        <li>Facebook Share Optimized</li>
                         <li>First Class SEO</li>
                     </ul>
-                <p class="text-muted"><strong>Technlology:</strong> Carnia PMS</p>
+                <p class="text-muted"><strong>Technlology:</strong> Unleash by Marko Aleksic</p>
                 <hr>
 
                 <!-- Gradska Pekara -->
-                <h3>Gradska Pekara - gradskapekara.mk - IN TESTING</h3>
-                <p>Corporate dynamic website and CMS built on Carnia PMS</p>
+                <h3>Gradska Pekara - <a href="http://gradskapekara.mk">gradskapekara.mk</a></h3>
+                <p>Corporate dynamic website and CMS and E-Commerce module built on Carnia PMS</p>
                     <ul>
                         <li>Diamond ERP API Integration</li>
-                        <li>Online Ordering System</li>
+                        <li>Online Ordering System - Coming Soon</li>
                         <li>Facebook API Integration</li>
                         <li>First Class SEO</li>
                     </ul>
@@ -60,6 +62,16 @@
 
                 <!-- Kumanovski Kori -->
                 <h3>Kumanovski Kori - <a href="http://kumanovskikori.mk">kumanovskikori.mk</a></h3>
+                <p>Corporate dynamic website and CMS built on Carnia PMS</p>
+                    <ul>
+                        <li>Facebook API Integration</li>
+                        <li>First Class SEO</li>
+                    </ul>
+                <p class="text-muted"><strong>Technlology:</strong> Carnia PMS</p>
+                <hr>
+
+                <!-- Fortis -->
+                <h3>Fortis Ltd. - <a href="http://fortis.mk">fortis.mk</a></h3>
                 <p>Corporate dynamic website and CMS built on Carnia PMS</p>
                     <ul>
                         <li>Facebook API Integration</li>

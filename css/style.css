@@ -1,6 +1,7 @@
 body {
     font-family: "Lato";
-    background: url(../img/bck.jpg) no-repeat center center fixed;
+    background: url(../img/bck2.jpg) no-repeat center center fixed;
+    background-color: #222;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
