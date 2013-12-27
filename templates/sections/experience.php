@@ -20,6 +20,7 @@
             <p>Februray 2013 - Present</p>
         </div>
     </div>
+    <br>
     <div class="row">
         <div class="col-md-8">
             <p>
@@ -38,6 +39,7 @@
             <p>June 2011 - Present</p>
         </div>
     </div>
+    <br>
     <div class="row">
         <div class="col-md-8">
             <p>

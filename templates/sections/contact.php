@@ -6,21 +6,21 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    If you'd like to get in touch with me about work related stuff, or just say hello; fill the form below or use another medium <i class="icon icon-arrow-right"></i>
+                    If you'd like to get in touch with me about work related stuff, or just say hello; shoot through the form below or use another medium <i class="fa fa-arrow-right"></i>
                 </p>
                 <div id="msgs"></div>
                 <form role="form" id="cform" name="cform" method="post" action="post-contact">
                     <div class="form-group">
-                        <label for="name">First and Last Name</label>
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Full Name">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="What is your name?">
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Your email to contact you back?">
                     </div>
                     <div class="form-group">
                         <label for="message">Message/Inquiry</label>
-                        <textarea class="form-control" name="message" id="message" rows="9" placeholder="Message/Inquiry"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="9" placeholder="What do you have in mind?"></textarea>
                     </div>
                     <button type="submit" id="submit" class="btn btn-lg btn-primary">Submit</button>
                 </form>
@@ -30,8 +30,8 @@
                 <address>
                 <strong><a href="https://s3-eu-west-1.amazonaws.com/cd-storage/vCard.vcf">Marko Aleksic</a></strong><br>
                 <p>
-                Industriska Zona 2 <br>
-                1300 Kumanovo, Macedonia <br>
+                    Industriska Zona 2 <br>
+                    1300 Kumanovo, Macedonia <br>
                     <script type="text/javascript">
                         //<![CDATA[
                         <!--

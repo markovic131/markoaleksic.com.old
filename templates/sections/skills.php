@@ -7,9 +7,9 @@
             <div class="col-md-12">
                 <small>PHP</small>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="87" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
-                    <span class="sr-only">87% Complete</span>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="91"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 91%;">
+                    <span class="sr-only">91% Complete</span>
                   </div>
                 </div>
             </div>
@@ -18,9 +18,9 @@
             <div class="col-md-12">
                 <small>HTML</small>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                    <span class="sr-only">90% Complete</span>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                    <span class="sr-only">95% Complete</span>
                   </div>
                 </div>
             </div>
@@ -29,9 +29,9 @@
             <div class="col-md-12">
                 <small>CSS</small>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                    <span class="sr-only">85% Complete</span>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="87"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
+                    <span class="sr-only">87% Complete</span>
                   </div>
                 </div>
             </div>
@@ -40,9 +40,9 @@
             <div class="col-md-12">
             <small>SQL</small>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                    <span class="sr-only">75% Complete</span>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="78"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
+                    <span class="sr-only">78% Complete</span>
                   </div>
                 </div>
              </div>
@@ -51,14 +51,28 @@
             <div class="col-md-12">
                 <small>JavaScript</small>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                    <span class="sr-only">85% Complete</span>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="89"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 89%;">
+                    <span class="sr-only">89% Complete</span>
                   </div>
                 </div>
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12">
+                <h3>My Tools of The Trade</h3>
+                <a href="http://laravel.com">Laravel</a>
+                - <a href="http://getcomposer.org/">Composer</a>
+                - <a href="https://github.com/"> GitHub</a>
+                - <a href="http://fortrabbit.com/">Fortrabbit</a>
+                - <a href="http://getbootstrap.com/">Bootstrap</a>
+                - <a href="http://nodejs.org/">Node JS</a>
+                - <a href="http://gruntjs.com/">Grunt</a>
+                - <a href="http://bower.io/">Bower</a>
+                - <a href="http://angularjs.org/">Angular JS</a>
+            </div>
+        </div>
+        <!-- <div class="row">
             <div class="col-md-12">
                 <p><strong>Programming Skills:</strong>
                     PHP, JavaScript, Java, Perl, OOP Concepts, MVC, HMVC, SDLC, CMM, UML
@@ -101,6 +115,6 @@
                 Bulgarian(intermediate), Greek(basic), German(basic)
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

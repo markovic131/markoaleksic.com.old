@@ -52,7 +52,7 @@ ul#navigation li a:hover, ul#navigation li a.active {background:#1b1b1b;color:#F
 a.gotop {text-decoration:none!important}
 #person-name-holder {padding: 10px;}
 #person-name-holder h3 {color: #fff;font-size: 26px;}
-.social-icons a {text-decoration: none; padding-right: 5px;}
+.social-icons a {text-decoration: none; padding-right: 5px; color: #333;}
 
 @media screen and (min-width:768px) and (max-width: 992px) {
 .gotop {visibility: hidden;}
