@@ -83,7 +83,7 @@ function sendMessage() {
         $("div#msgs").html('<p class="alert alert-danger">Please enter a valid email address</p>');
         return false;
     }
-    submitBtn.prop('disabled',true).html('<i class="fa-spinner fa-spin"></i>');
+    submitBtn.prop('disabled',true).html('<i class="fa fa-spinner fa-spin"></i>');
 
     $.ajax({
         type: "POST",

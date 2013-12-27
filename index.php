@@ -15,8 +15,8 @@ require '_lib/Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim(array(
-    'debug' => true,
-    'mode'  => 'testing'
+    'debug' => false,
+    'mode'  => 'production'
 ));
 
 ////////////////////////////////////////////////////////
@@ -82,7 +82,7 @@ $app->run();
 // --------------------- PRIVATE FUNCTIONS --------------------- //
 ///////////////////////////////////////////////////////////////////
 
-function send_email($to, $clientName, $clientEmail, $emailSubject, $clientMessage)
+function send_email($clientName, $clientEmail, $emailSubject, $clientMessage)
 {
     $headers  = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
