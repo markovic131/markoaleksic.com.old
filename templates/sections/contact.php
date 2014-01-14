@@ -4,7 +4,7 @@
             <h1>Get in Touch</h1>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <!-- <div class="col-md-8">
                 <p>
                     If you'd like to get in touch with me about work related stuff, or just say hello; shoot through the form below or use another medium <i class="fa fa-arrow-right"></i>
                 </p>
@@ -25,8 +25,8 @@
                     <button type="submit" id="submit" class="btn btn-lg btn-primary">Submit</button>
                 </form>
                 <br>
-            </div>
-            <div class="col-md-4">
+            </div> -->
+            <div class="col-md-6">
                 <address>
                 <strong><a href="https://s3-eu-west-1.amazonaws.com/cd-storage/vCard.vcf">Marko Aleksic</a></strong><br>
                 <p>
@@ -69,7 +69,7 @@
                 <!-- <a class="btn btn-danger btn-block"
                     href="https://s3-eu-west-1.amazonaws.com/cd-storage/marko_aleksic_cv.pdf">
                     <i class="fa fa-arrow-down fa-fw"></i> Download my CV</a> -->
-                <a class="btn btn-info btn-block"
+                <a class="btn btn-info btn-block btn-lg"
                     href="https://s3-eu-west-1.amazonaws.com/cd-storage/vCard.vcf">
                     <i class="fa fa-arrow-down fa-fw"></i> vCard</a>
             </div>
