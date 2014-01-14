@@ -49,6 +49,8 @@ $app->get('/',function () use ($app) {
 
 $app->post('/post-contact', function() use ($app) {
 
+        exit;
+
         $req = $app->request();
 
         $name    = $req->post('name');
